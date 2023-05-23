@@ -1,66 +1,53 @@
-// tab
-const tabs = document.querySelectorAll('[data-target]'),
-      tabsContents = document.querySelectorAll('[data-content]')
+// Show Menu
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-togle'),
+      navClose = document.getElementById('nav-close')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
-        tabsContents.forEach(tc =>{
-            tc.classList.remove('filters__active')
-        })
-        target.classList.add('filters__active')
-
-        tabs.forEach(t =>{
-            t.classList.remove('filter-tab-active')
-        })
-        tab.classList.add('filter-tab-active')
+// Show
+/* Validate if constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
     })
-})
-// dark light
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'ri-sun-line'
-
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
-// scroll
+// Hidden
+/* Validate if constant exists */
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+// Remove
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+// Change Background Header
+const scrollHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('header-bg') 
+                       : header.classList.remove('header-bg')
+}
+window.addEventListener('scroll', scrollHeader)
+
+// Scrol Animation
 const sr = ScrollReveal({
-    origin: 'top',
+    origin: 'bottom',
     distance: '60px',
-    duration: 2500,
-    delay: 400
+    duration: 2500
 })
 
-sr.reveal('.profile__border')
-sr.reveal('.profile__name', {delay: 500})
-sr.reveal('.profile__profesion', {delay: 600})
-
-sr.reveal('.profile__social', {delay: 700})
-sr.reveal('.profile__info-grup', {interfal: 100, delay: 700})
-
-sr.reveal('.profile__button', {delay: 800})
-
-sr.reveal('.filters__content', {delay: 900})
-sr.reveal('.filters', {delay: 900})
+sr.reveal('.home__images', {distance: '120px', delay: 400})
+sr.reveal('.home__title', {delay: 1000})
+sr.reveal('.home__deskripsi', {delay: 1200})
+sr.reveal('.home__button', {delay: 1400})
+sr.reveal('.home__footer', {delay: 1600})
+sr.reveal('.home__data', {origin: 'right', interval: 100,delay: 1600})

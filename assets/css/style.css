@@ -6,7 +6,7 @@
       Pink: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
   */
-
+  
   --hue: 207;
   --sat: 90%;
   --lig: 61%;
@@ -219,7 +219,7 @@ body.dark-theme {
   background-color: var(--first-color);
   color: #fff;
   padding: 1.15rem 1.5rem;
-  border-radius: .5rem;
+  border-radius: 100px;
   transition: .3s;
 }
 
@@ -263,7 +263,7 @@ body.dark-theme {
   margin: 2rem 0 0.2rem;
   background-color: var(--text-color-lighten);
   padding: .375rem;
-  border-radius: .75rem;
+  border-radius: 100px;
   display: flex;
   justify-content: space-between;
   column-gap: .5rem;
@@ -278,7 +278,7 @@ body.dark-theme {
   font-size: var(--small-font-size);
   font-family: var(--body-font);
   font-weight: 500;
-  border-radius: .75rem;
+  border-radius: 100px;
   cursor: pointer;
   background-color: transparent;
   transition: .3s;
@@ -287,10 +287,11 @@ body.dark-theme {
 .filters__button:hover {
   background-color: var(--body-color);
 }
+
 /* project */
 .project__card {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 50px;
   overflow: hidden;
 }
 
@@ -381,7 +382,6 @@ body.dark-theme {
 .filters__active[data-content] {
   display: grid;
 }
-
 
 /* activate button filter */
 .filter-tab-active {

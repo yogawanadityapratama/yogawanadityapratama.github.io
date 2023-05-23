@@ -3,105 +3,267 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>Eneftiwebsite</title>
+        <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <title>YOGAWAN ADYTYA PRATAMAP</title>
     </head>
     <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    nft.io
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__items">
-                            <a href="" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="" class="nav__link">Market</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="" class="nav__link">Actifity</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="" class="nav__link">Comunity</a>
-                        </li>
+        <header class="profile container">
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <!-- <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="/assets/img/perfil.png" alt="">
+                        </div>
+                    </div> -->
+                    <h2 class="profile__name">
+                        HAI! <br>
+                        I'M YOGAWAN
+                    </h2>
+                    <h3 class="profile__profesion">
+                        A Beginner Frontend Developer
+                    </h3>
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/yogawanadytyapratama/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/yogawanadittama" target="_blank" class="profile__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="https://github.com/yogawanadityapratama" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
                     </ul>
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                    <!-- <img src="/assets/img/ethereum-img.png" alt="nav image" class="nav__img"> -->
                 </div>
-                <div class="nav__togle" id="nav-togle">
-                    <i class="ri-menu-4-line"></i>
+            </div>
+            <div class="profile__info grid">
+                <div class="profile__info-grup">
+                    <h3 class="profile__info-number">
+                        3+
+                    </h3>
+                    <p class="profile__info-description">
+                        Years of <br> Work
+                    </p>
                 </div>
-            </nav>
+                <div class="profile__info-grup">
+                    <h3 class="profile__info-number">
+                        30+
+                    </h3>
+                    <p class="profile__info-description">
+                        Complete <br> Projects
+                    </p>
+                </div>
+                <div class="profile__info-grup">
+                    <h3 class="profile__info-number">
+                        7+
+                    </h3>
+                    <p class="profile__info-description">
+                        More <br> Costumers
+                    </p>
+                </div>
+            </div>
+            <div class="profile__button">
+                <a href="/assets/pdf/yogawan.pdf" class="button">Download my Profile<i class="ri-download-line"></i></a>
+                <div class="profile__buttons-small">
+                    <a href="" class="button button__small button__gray">
+                        <i target="_blank" class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="" class="button button__small button__gray">
+                        <i target="_blank" class="ri-messenger-line"></i>
+                    </a>
+                </div>
+            </div>
         </header>
         <main class="main">
-            <section class="home">     
-                <div class="home__shape-small"></div>        
-                <div class="home__shape-big-1"></div>        
-                <div class="home__shape-big-2"></div>    
-                <img src="/assets/img/shape-bg.png" class="home__shape-bg">    
-                <div class="home__container container">
-
-                    <div class="home__info">
-                        <h1 class="home__title">
-                            <span>Discover</span><br>
-                            Collect, and <br>
-                            sell NFTs
-                        </h1>
-                        <p class="home__deskripsi">
-                            Explore on the world best largest NFT marketplace.
-                        </p>
-                        <a href="" class="home__button">EXPLORE</a>
+            <section class="filters container">
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#project">
+                        Project
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+                <div class="filters__sections">
+                    <div>
+                        <br>
                     </div>
-                    <div class="home__group">
-                        <div class="home__images">
-                            <div class="home__img-eth">
-                                <img src="/assets/img/ethereum-img.png" alt="home image">
+                    <div class="project__content grid filters__active" data-content id="project">
+                        <article class="project__card">
+                            <img src="/assets/img/project1.jpg" alt="" class="project__img">
+                            <div class="project__modal">
+                                <div>
+                                    <span class="project__subtitle">E-Commerce</span>
+                                    <h3 class="project__title">Landing Page E-Commerce</h3>
+                                    <a href="#" class="project__button button button__small">
+                                        <i class="ri-links-line"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="home__img-orbe ">
-                                <img src="/assets/img/orbe-img.png" alt="home image">
+                        </article>
+                        <article class="project__card">
+                            <img src="/assets/img/project2.jpg" alt="" class="project__img">
+                            <div class="project__modal">
+                                <div>
+                                    <span class="project__subtitle">News</span>
+                                    <h3 class="project__title">Game News & TOP UP Store</h3>
+                                    <a href="#" class="project__button button button__small">
+                                        <i class="ri-links-line"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="home__data">
-                            <div>
-                                <h2 class="home__data-number">26K+</h2>
-                                <span class="home__data-subtitle">ArtWork</span>    
+                        </article>
+                        <article class="project__card">
+                            <img src="/assets/img/project3.jpg" alt="" class="project__img">
+                            <div class="project__modal">
+                                <div>
+                                    <span class="project__subtitle">Form Login</span>
+                                    <h3 class="project__title">Sign In & Sign Up</h3>
+                                    <a href="#" class="project__button button button__small">
+                                        <i class="ri-links-line"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div>
-                                <h2 class="home__data-number">18K</h2>
-                                <span class="home__data-subtitle">Auction</span>    
-                            </div>
-                            <div>
-                                <h2 class="home__data-number">8K</h2>
-                                <span class="home__data-subtitle">Artist</span>    
-                            </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="home__footer">
-                        <div>
-                            <span class="home__footer-title">Current bid</span>
-                            <h3 class="home__footer-number">2.00 ETH</h3>
-                            <span class="home__footer-subtitle">$8046.86</span>
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Frontend Developer
+                            </h3>
+                            <div>
+                                <br>
+                            </div>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-html5-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                HTML
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-css3-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                CSS
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-javascript-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                Javascript
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-reactjs-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                React
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-bootstrap-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                Bootstrap
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <span class="home__footer-title">Auction ending in</span>
-                            <div class="home__footer-time">
-                                <div class="home__footer-counter">
-                                    <h3 class="home__footer-number">06</h3>
-                                    <span class="home__footer-subtitle">hours</span>
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Software Design
+                            </h3>
+                            <div>
+                                <br>
+                            </div>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-layout-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                Figma
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-layout-2-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                Adobe XD
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-edit-box-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                PhotoShop
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="home__footer-counter">
-                                    <h3 class="home__footer-number">26</h3>
-                                    <span class="home__footer-subtitle">minutes</span>
-                                </div>
-                                <div class="home__footer-counter">
-                                    <h3 class="home__footer-number">50</h3>
-                                    <span class="home__footer-subtitle">seconds</span>
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-pencil-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                Ilustrator
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-pencil-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">
+                                                CorelDraw
+                                            </h3>
+                                            <span class="skills__level">
+                                                Expert
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +271,12 @@
                 </div>
             </section>
         </main>
+        <footer class="footer container">
+            <span class="footer__copy">
+                Create by Yogawan
+            </span>
+        </footer>
         <script src="/assets/js/scrollreveal.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/main.js"></script>
     </body>
 </html>

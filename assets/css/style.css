@@ -59,6 +59,22 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
+h2 span.typed-text {
+  color: var(--first-color);
+}
+
+/* h2 span.cursor {
+  display: inline-block;
+  background-color: var(--first-color);
+  margin-left: 1px;
+  width: 5px;
+  animation: blink 1s infinite;
+}
+
+h2 span.cursor.typing {
+  animation: none;
+} */
+
 ul {
   list-style: none;
 }

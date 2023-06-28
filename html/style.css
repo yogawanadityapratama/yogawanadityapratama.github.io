@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Silkscreen&display=swap');
+body {
+    background-color: #010101;
+    color: #EDEDED;
+    font-family: 'Poppins', sans-serif;
+    margin: 5%;
+}
+
+.text {
+    text-align: center;
+}
+
+.container {
+    background-color: #171717;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 30px;
+}
+
+.container-list {
+
+    padding: 5px;
+    margin: 5px;
+
+    width: 90%;
+    height: auto;
+}
+
+/* For small devices */
+@media screen and (max-width: 340px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+    body {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    body {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+@media screen and (min-width: 1048px) {
+    body {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+  
+@media screen and (min-width: 1500px) {
+    body {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}

@@ -43,3 +43,48 @@ a {
     font-weight: 500;
     font-size: 18;
 }
+
+@media (min-width: 100px) {
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 96px;
+    }
+    h2 {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 96px;
+    }
+    h2 {
+        font-size: 64px;
+    }
+}

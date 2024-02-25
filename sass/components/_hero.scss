@@ -1,14 +1,19 @@
 .hero {
     margin-top: 64px;
     margin-bottom: 64px;
+    text-align: center;
     .tag {
-        padding: 12px 24px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        background-color: #03141D;
-        width: fit-content;
-        border-radius: 100px;
-        p {
-            margin: 0;
+        display: flex;
+        justify-content: center;
+        .tag-content {
+            padding: 12px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background-color: #03141D;
+            width: fit-content;
+            border-radius: 100px;
+            p {
+                margin: 0;
+            }
         }
     }
     a {
@@ -19,7 +24,7 @@
     }
 }
 
-.experience {
-    margin-top: 64px;
-    margin-bottom: 64px;
-}
+// .experience {
+//     margin-top: 64px;
+//     margin-bottom: 64px;
+// }

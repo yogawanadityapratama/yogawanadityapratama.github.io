@@ -198,15 +198,20 @@ body {
 .hero {
   margin-top: 64px;
   margin-bottom: 64px;
+  text-align: center;
 }
 .hero .tag {
+  display: flex;
+  justify-content: center;
+}
+.hero .tag .tag-content {
   padding: 12px 24px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background-color: #03141D;
   width: fit-content;
   border-radius: 100px;
 }
-.hero .tag p {
+.hero .tag .tag-content p {
   margin: 0;
 }
 .hero a {
@@ -214,11 +219,6 @@ body {
   background-color: #FFFFFF;
   color: black;
   border-radius: 100px;
-}
-
-.experience {
-  margin-top: 64px;
-  margin-bottom: 64px;
 }
 
 .nav {

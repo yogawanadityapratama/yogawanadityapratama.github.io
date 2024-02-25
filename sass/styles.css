@@ -48,7 +48,7 @@ a {
     font-size: 44px;
   }
   h2 {
-    font-size: 34px;
+    font-size: 44px;
   }
 }
 @media (min-width: 768px) {
@@ -61,7 +61,7 @@ a {
 }
 @media (min-width: 992px) {
   h1 {
-    font-size: 64px;
+    font-size: 76px;
   }
   h2 {
     font-size: 44px;

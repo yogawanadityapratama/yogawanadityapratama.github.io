@@ -3,6 +3,7 @@ h1 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 96px;
+  line-height: 100%;
   background-image: linear-gradient(#093A53, #FFFFFF);
   -webkit-background-clip: text;
   color: transparent;
@@ -17,11 +18,23 @@ h2 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 64px;
+  line-height: 100%;
   background-image: linear-gradient(#093A53, #FFFFFF);
   -webkit-background-clip: text;
   color: transparent;
   padding: 0;
-  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: white;
   padding: 0;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -34,7 +47,11 @@ p {
   font-weight: 300;
   font-size: 18px;
   color: #9B9B9B;
-  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 a {
@@ -128,15 +145,69 @@ body {
     margin-right: 256px;
   }
 }
+.certificate .card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.certificate .card .card-content {
+  width: 400px;
+  height: fit-content;
+  margin-bottom: 32px;
+}
+.certificate .card .card-content img {
+  width: 400px;
+  border-radius: 16px;
+}
+.certificate .card .card-content .tag {
+  padding: 12px 24px;
+  background-color: #093A53;
+  width: fit-content;
+  border-radius: 100px;
+}
+.certificate .card .card-content .tag p {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.currently-work .card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.currently-work .card .card-content {
+  width: 400px;
+  height: fit-content;
+  margin-bottom: 32px;
+}
+.currently-work .card .card-content img {
+  width: 400px;
+  border-radius: 16px;
+}
+.currently-work .card .card-content .tag {
+  padding: 12px 24px;
+  background-color: #093A53;
+  width: fit-content;
+  border-radius: 100px;
+}
+.currently-work .card .card-content .tag p {
+  color: #FFFFFF;
+  margin: 0;
+}
+
 .hero {
   margin-top: 64px;
   margin-bottom: 64px;
 }
 .hero .tag {
-  padding: 16px 32px;
-  border: 1px solid #FFFFFF;
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: #03141D;
   width: fit-content;
   border-radius: 100px;
+}
+.hero .tag p {
+  margin: 0;
 }
 .hero a {
   padding: 16px 32px;
@@ -155,6 +226,7 @@ body {
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 3;
 }
 .nav .nav-container {
   display: flex;
@@ -184,12 +256,12 @@ body {
 
 @media (min-width: 100px) {
   .nav {
-    bottom: 64px;
+    top: 32px;
   }
 }
 @media (min-width: 768px) {
   .nav {
-    bottom: 64px;
+    top: 32px;
   }
 }
 @media (min-width: 992px) {
@@ -206,6 +278,10 @@ body {
   .nav {
     top: 32px;
   }
+}
+.sticky {
+  position: sticky;
+  top: 128px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,10 +2,14 @@
     margin-top: 64px;
     margin-bottom: 64px;
     .tag {
-        padding: 16px 32px;
-        border: 1px solid #FFFFFF;
+        padding: 12px 24px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: #03141D;
         width: fit-content;
         border-radius: 100px;
+        p {
+            margin: 0;
+        }
     }
     a {
         padding: 16px 32px;

@@ -1,0 +1,53 @@
+.certificate {
+    .card {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card-content {
+            width: 400px;
+            height: fit-content;
+            margin-bottom: 32px;
+            img {
+                width: 400px;
+                border-radius: 16px;
+            }
+            .tag {
+                padding: 12px 24px;
+                background-color: #093A53;
+                width: fit-content;
+                border-radius: 100px;
+                p {
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.currently-work {
+    .card {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card-content {
+            width: 400px;
+            height: fit-content;
+            margin-bottom: 32px;
+            img {
+                width: 400px;
+                border-radius: 16px;
+            }
+            .tag {
+                padding: 12px 24px;
+                background-color: #093A53;
+                width: fit-content;
+                border-radius: 100px;
+                p {
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

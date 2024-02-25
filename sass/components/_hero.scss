@@ -1,0 +1,21 @@
+.hero {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    .tag {
+        padding: 16px 32px;
+        border: 1px solid #FFFFFF;
+        width: fit-content;
+        border-radius: 100px;
+    }
+    a {
+        padding: 16px 32px;
+        background-color: #FFFFFF;
+        color: black;
+        border-radius: 100px;
+    }
+}
+
+.experience {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 96px;
+  background-image: linear-gradient(#093A53, #FFFFFF);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  background-image: linear-gradient(#093A53, #FFFFFF);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #9B9B9B;
+  margin: 0;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18;
+}
+
+body {
+  background-color: #03141D;
+  padding: 0;
+}
+
+@media (min-width: 100px) {
+  body {
+    margin-top: 128px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    margin-top: 128px;
+    margin-bottom: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    margin-top: 128px;
+    margin-bottom: 0;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    margin-top: 128px;
+    margin-bottom: 0;
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    margin-top: 128px;
+    margin-bottom: 0;
+    margin-left: 256px;
+    margin-right: 256px;
+  }
+}
+.hero {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.hero .tag {
+  padding: 16px 32px;
+  border: 1px solid #FFFFFF;
+  width: fit-content;
+  border-radius: 100px;
+}
+.hero a {
+  padding: 16px 32px;
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 100px;
+}
+
+.experience {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.nav .nav-container {
+  display: flex;
+  justify-content: center;
+}
+.nav .nav-container .nav-content {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  background-color: #093A53;
+  padding: 24px 32px;
+  border-radius: 100px;
+}
+.nav .nav-container .nav-content a {
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #9B9B9B;
+  text-decoration: none;
+}
+.nav .nav-container .nav-content a.active {
+  color: #FFFFFF;
+}
+.nav .nav-container .nav-content a:hover {
+  color: #FFFFFF;
+}
+
+@media (min-width: 100px) {
+  .nav {
+    bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .nav {
+    bottom: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .nav {
+    top: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    top: 32px;
+  }
+}
+@media (min-width: 1400px) {
+  .nav {
+    top: 32px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

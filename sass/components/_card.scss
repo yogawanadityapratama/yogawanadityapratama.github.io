@@ -16,9 +16,10 @@
                 background-color: #093A53;
                 width: fit-content;
                 border-radius: 100px;
-                p {
+                a {
                     color: #FFFFFF;
                     margin: 0;
+                    font-weight: 300;
                 }
             }
         }
@@ -28,14 +29,13 @@
 .currently-work {
     .card {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        overflow: scroll;
         .card-content {
-            width: 400px;
+            width: 350px;
             height: fit-content;
-            margin-bottom: 32px;
+            margin-right: 20px;
             img {
-                width: 400px;
+                width: 350px;
                 border-radius: 16px;
             }
             .tag {

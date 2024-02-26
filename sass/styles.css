@@ -165,23 +165,23 @@ body {
   width: fit-content;
   border-radius: 100px;
 }
-.certificate .card .card-content .tag p {
+.certificate .card .card-content .tag a {
   color: #FFFFFF;
   margin: 0;
+  font-weight: 300;
 }
 
 .currently-work .card {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  overflow: scroll;
 }
 .currently-work .card .card-content {
-  width: 400px;
+  width: 350px;
   height: fit-content;
-  margin-bottom: 32px;
+  margin-right: 20px;
 }
 .currently-work .card .card-content img {
-  width: 400px;
+  width: 350px;
   border-radius: 16px;
 }
 .currently-work .card .card-content .tag {
@@ -282,6 +282,24 @@ body {
 .sticky {
   position: sticky;
   top: 128px;
+}
+
+.experience {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.currently-work {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.certificate {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /*# sourceMappingURL=styles.css.map */

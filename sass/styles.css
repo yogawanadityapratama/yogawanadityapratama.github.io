@@ -100,6 +100,10 @@ a {
     font-size: 64px;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #03141D;
   padding: 0;

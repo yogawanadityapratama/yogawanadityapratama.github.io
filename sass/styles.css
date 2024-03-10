@@ -129,24 +129,24 @@ body {
   body {
     margin-top: 128px;
     margin-bottom: 0;
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 44px;
+    margin-right: 44px;
   }
 }
 @media (min-width: 1200px) {
   body {
     margin-top: 128px;
     margin-bottom: 0;
-    margin-left: 128px;
-    margin-right: 128px;
+    margin-left: 64px;
+    margin-right: 64px;
   }
 }
 @media (min-width: 1400px) {
   body {
     margin-top: 128px;
     margin-bottom: 0;
-    margin-left: 256px;
-    margin-right: 256px;
+    margin-left: 96px;
+    margin-right: 96px;
   }
 }
 .certificate .card {
@@ -237,6 +237,7 @@ body {
   justify-content: center;
 }
 .nav .nav-container .nav-content {
+  border: 1px solid rgba(255, 255, 255, 0.15);
   width: fit-content;
   display: flex;
   justify-content: space-between;
@@ -292,6 +293,11 @@ body {
   margin-top: 32px;
   margin-bottom: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.experience img {
+  width: 100%;
+  border-radius: 24px;
+  margin-top: 32px;
 }
 
 .currently-work {

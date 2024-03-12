@@ -65,7 +65,7 @@ a {
     font-size: 44px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 @media (min-width: 768px) {
@@ -73,7 +73,7 @@ a {
     font-size: 64px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 44px;
   }
 }
 @media (min-width: 992px) {
@@ -175,6 +175,33 @@ body {
   font-weight: 300;
 }
 
+@media (min-width: 100px) {
+  .certificate .card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .certificate .card .card-content {
+    width: 400px;
+    height: fit-content;
+    margin-bottom: 32px;
+  }
+  .certificate .card .card-content img {
+    width: 100%;
+    border-radius: 16px;
+  }
+  .certificate .card .card-content .tag {
+    padding: 12px 24px;
+    background-color: #093A53;
+    width: fit-content;
+    border-radius: 100px;
+  }
+  .certificate .card .card-content .tag a {
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 300;
+  }
+}
 .currently-work .card {
   display: flex;
   overflow: scroll;
